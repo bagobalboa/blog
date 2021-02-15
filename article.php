@@ -8,7 +8,7 @@ if (!empty($_GET['id'])) {
 $article = getArticle($_GET['id']);
 
 if ($article == false) {
-    include '404.php';
+    include 'erreurs/404.php';
     die;
 }
 
@@ -29,6 +29,6 @@ include 'layout/header.php';
 <?php include 'layout/footer.php';
 
 } else {
-    include '404.php';
+    include 'erreurs/404.php';
     die;
 }
